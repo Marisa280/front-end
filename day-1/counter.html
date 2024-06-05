@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffbce4; /* Dark grey */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #d63997; /* Dark purple */
+            color: #ffffff; /* White text */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d63997; /* Lighter shade of purple */
+        }
+
+        #count_text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #4e002f; /* Vivid yellow */
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<script>
+    let count = 0;
+
+    function dec() {
+        if (count == 0) return;
+        count = count - 1;
+        document.getElementById('count_text').innerHTML = count;
+    }
+
+    function inc() {
+        count = count + 1;
+        document.getElementById('count_text').innerHTML = count;
+    }
+</script>
+
+<body>
+    <div class="lock-container">
+        <header>
+            <h1>Portfolio's Miss Marisa Phueaksopha</h1>
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html#Information">Information</a></li>
+                    <li><a href="portfolio.html#Graduate">Graduate</a></li>
+                    <li><a href="portfolio.html#Language Skill">Language Skill</a></li>
+                    <li><a href="portfolio.html#Soft Skill">Soft Skill</a></li>
+                    <li><a href="portfolio.html#Hard Skill">Hard Skill</a></li>
+                    <li><a href="portfolio.html#Experience">Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <button onclick="dec()"> - </button>
+    <div id="count_text">0</div>
+    <button onclick="inc()"> + </button>
+</body>
+
+</html>

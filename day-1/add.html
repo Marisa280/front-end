@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    input[type="number"], button {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    button {
+        background-color: #c26262;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #000000;
+    }
+
+    #result {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+</style>
+<script>
+    function add() {
+        let num1 = document.getElementById('num1').value
+        let num2 = document.getElementById('num2').value
+        let result = parseInt(num1)+parseInt(num2)
+        document.getElementById('result').innerHTML = result
+    }
+</script>
+
 <body>
-    hehe
+    <div class="lock-container">
+        <header>
+            <h1>Portfolio's Miss Marisa Phueaksopha</h1>
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html#Information">Information</a></li>
+                    <li><a href="portfolio.html#Graduate">Graduate</a></li>
+                    <li><a href="portfolio.html#Language Skill">Language Skill</a></li>
+                    <li><a href="portfolio.html#Soft Skill">Soft Skill</a></li>
+                    <li><a href="portfolio.html#Hard Skill">Hard Skill</a></li>
+                    <li><a href="portfolio.html#Experience">Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container" style="margin-top: 100px;">
+    <input id="num1" type="number"> + 
+    <input id="num2" type="number">
+    <button onclick="add()">calculate</button>
+    <h1 id="result">Result</h1>
+    </div>
 </body>
 </html>
