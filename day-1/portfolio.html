@@ -1,116 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marisa Phueaksopha</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Kanit';
-            font-size: 16pt;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: rgb(0, 0, 0);
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        head h1 {
-            margin: 0;
+    <link rel="stylesheet" href="styles.css">
+<style>
 
-        }
-        nav ul {
-            list-style: none;
-            padding : 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            color: #dd9e00;
-        }
-        h3 {
-            font-size: 30pt;
-        }
-    </style>
+</style>
 </head>
 
 <body>
-    <header>
-        <h1>Portfolio's Miss Marisa Phueaksopha</h1>
-        <nav> 
-        <ul><li><a href="#Information">Information</a> </li>
-            <li><a href="#Graduate">Graduate</a></li>
-            <li><a href="#Language Skill">Language Skill</a></li>
-            <li><a href="#Soft Skill">Soft Skill</a> </li>
-            <li><a href="#Hard Skill">Hard Skill</a></li>
-        </ul> 
-        </nav>
+    <div class="lock-container">
+        <header>
+            <h1>Portfolio's Miss Marisa Phueaksopha</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Information">Information</a></li>
+                    <li><a href="#Graduate">Graduate</a></li>
+                    <li><a href="#Language Skill">Language Skill</a></li>
+                    <li><a href="#Soft Skill">Soft Skill</a></li>
+                    <li><a href="#Hard Skill">Hard Skill</a></li>
+                </ul>
+            </nav>
         </header>
-     
- 
-        <!--<ul>งานบวกเลข <a href="add.html" target="_blank">Add Prohect</a>-->
+    </div>
 
-    <section id="Information"><h3>Information</h3>
-    <img src="images.jpg" alt="My Image" width="300"> <!--ข้อมูลส่วนตัว-->
-    <li>Name : Marisa Phueaksopha</li>  
-    <li>Date of Birth : 30 December 2003 </li>
-    <li>Address : Burapha University</li> 
-    <li>Phone Number : 0971289830 </li>
-    <li>Email : 65160280@go.buu.ac.th</li>
-    </ul>
-</section> 
-   
+    <div class="container" style="margin-top: 100px;">
+        <section id="Information">
+            <h3>Information</h3>
+            <div class="img-cen">
+                <img src="images.jpg" alt="My Image" width="300" id="profile">
+            </div>
+            <ul>
+                <li>Name : Marisa Phueaksopha</li>
+                <li>Date of Birth : 30 December 2003 </li>
+                <li>Address : Burapha University</li>
+                <li>Phone Number : 0971289830 </li>
+                <li>Email : 65160280@go.buu.ac.th</li>
+            </ul>
+        </section>
 
-    <section id="Graduate"><h3>Graduate</h3> <!--การศึกษา-->
-        <ul>
-        <h4>Anuban Saraburi School</h4>
-        <li>Grade 6 (20xx)</li>
-        <li>GPA 4.00</li>
-        <h4>Saraburiwitthayakhom School</h4> 
-        <li>Grade 12 (20xx) </li>
-        <li>GPA 4.00</li>
-        <h4>Burapha University</h4>
-        <li>Scient Bachalor Degree (20xx)</li>
-        <li>GPA 4.00</li>
-        </ul>
-    </section>
+        <section id="Graduate">
+            <h3>Graduate</h3>
+            <ul>
+                <h4>Anuban Saraburi School</h4>
+                <li>Grade 6 (20xx)</li>
+                <li>GPA 4.00</li>
+                <h4>Saraburiwitthayakhom School</h4>
+                <li>Grade 12 (20xx) </li>
+                <li>GPA 4.00</li>
+                <h4>Burapha University</h4>
+                <li>Scientific Bachelor's Degree (20xx)</li>
+                <li>GPA 4.00</li>
+            </ul>
+        </section>
 
-    <section id="Language Skill"><h3>Language Skill</h3> <!--ระดับภาษา-->
-        <ul>
-        <li>English : Native</li>
-        <li>Thai : Native</li>
-        <li>Korean : Beginning</li>
-        </ul>
-    </section>
+        <section id="Language Skill">
+            <h3>Language Skill</h3>
+            <ul>
+                <li>English : Native</li>
+                <li>Thai : Native</li>
+                <li>Korean : Beginning</li>
+            </ul>
+        </section>
 
-    <section id="Soft Skill"><h3>Soft Skill</h3> 
-    <ul>
-    <li>Open-mindedness</li>
-    <li>Creativity</li>
-    </ul>
-    </section>
+        <section id="Soft Skill">
+            <h3>Soft Skill</h3>
+            <ul>
+                <li>Open-mindedness</li>
+                <li>Creativity</li>
+            </ul>
+        </section>
 
-    <section id="Hard Skill"><h3>Hard Skill</h3>
-    <ul>
-    <li>frontk-end</li>
-    <li>UX/UI Design</li>
-    <li>Power BI</li>
-    <li>Power BI</li>
-    <li>Excel</li>
-    <li>Python</li>
-    </ul>
-</section>
-    
+        <section id="Hard Skill">
+            <h3>Hard Skill</h3>
+            <ul>
+                <li>Front-end Development</li>
+                <li>UX/UI Design</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+                <li>Python</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="lock-footer">
+        <!-- You can add your footer content here -->
+    </div>
 </body>
 
 </html>

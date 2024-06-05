@@ -1,0 +1,81 @@
+body {
+    font-family: 'Kanit';
+    font-size: 16pt;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(117,29,176);
+    background: linear-gradient(100deg, rgba(117,29,176,1) 0%, rgba(236,152,35,1) 100%);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(117,29,176);
+    background: linear-gradient(100deg, rgba(117,29,176,1) 0%, rgba(236,152,35,1) 100%);
+}
+nav ul li {
+    display: inline-block;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000
+}
+section h3 {
+    font-size: 30pt;
+    color: #000;
+    border-bottom: 2px solid #9999;
+    padding-bottom: 5px
+}
+#profile {
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid #999;
+}
+.container {
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding-top: 60px;
+    /* Adjust this value according to your header height */
+}
+.img-cen {
+    text-align: center;
+}
+/* Locking Container, Header, and Footer */
+.lock-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.lock-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}

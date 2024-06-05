@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function echo() {
+        console.log('Hello')
+        let inputHello = document.getElementById('input-Hello')
+        let text = inputHello.value
+        console.log(text)
+        console.log(document.getElementById('Result').innerHTML)
+        document.getElementById('Result').innerHTML = text
+    }
+</script>
+
+<body>
+    <input id="input-Hello" type="text"><button onclick="echo()">Echo</button>
+    <h1 id="Result">Result</h1>
+</body>
+
+</html>
